@@ -1,0 +1,221 @@
+:root {
+  --pl-purple: #2c0c3c;
+  --pl-red: #DA291C;
+  --pl-blue: #082765;
+  --pl-white: #FFFFFF;
+  --pl-black: #000000;
+}
+
+.premier-logo {
+  width: 400px; /* Tamanho da logo */
+  height: auto;
+  margin-top: -150px;
+  margin-right: 10px; /* Espaço entre o título */
+}
+
+.Titulo {
+  font-family: 'Rajdhani', sans-serif; /* Ou 'Bebas Neue' */
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff; /* Roxo da Premier League */
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 3px 3px 0px #082765; /* Sombra amarela inspirada na PL */
+}
+
+/* Card estilizado */
+.card {
+  background: var(--pl-purple);
+  color: var(--pl-white);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 200px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho do Card */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 20px auto;
+  background: var(--pl-blue);
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Botão dentro do Card */
+.toggle-btn {
+  background: transparent;
+  color: var(--pl-white);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Formulário escondido por padrão */
+.form-content {
+  padding: 15px;
+  background: var(--pl-white);
+  color: var(--pl-black);
+  border-radius: 5px;
+  margin-top: -20px;
+  display: flex;
+  overflow-x: auto;
+  flex-direction: column;
+  gap: 10px; /* Adiciona espaço entre os campos */
+}
+
+/* Grupo de formulário */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Labels */
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Inputs e Selects */
+.input-text,
+.input-select {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid var(--pl-purple);
+  border-radius: 5px;
+}
+
+/* Efeito ao focar */
+.input-text:focus,
+.input-select:focus {
+  outline: none;
+  border-color: var(--pl-red);
+  box-shadow: 0px 0px 5px var(--pl-red);
+}
+
+.classification-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  table-layout: fixed; /* Garante que a largura das colunas seja uniforme */
+}
+
+.classification-table th, .classification-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  word-wrap: break-word; /* Evita que textos longos quebrem a tabela */
+}
+
+.classification-table th {
+  background-color: #f4f4f4;
+}
+
+.classification-table th, .classification-table td {
+  width: auto; /* Ajusta automaticamente a largura das colunas */
+}
+
+/* Se necessário, defina uma largura mínima para cada coluna */
+.classification-table th:nth-child(1), .classification-table td:nth-child(1) { width: 50px; }  /* ID */
+.classification-table th:nth-child(2), .classification-table td:nth-child(2) { width: 80px; }  /* Vitórias */
+.classification-table th:nth-child(3), .classification-table td:nth-child(3) { width: 80px; }  /* Derrotas */
+.classification-table th:nth-child(4), .classification-table td:nth-child(4) { width: 80px; }  /* Empates */
+.classification-table th:nth-child(5), .classification-table td:nth-child(5) { width: 100px; } /* Saldo de Gols */
+.classification-table th:nth-child(6), .classification-table td:nth-child(6) { width: 100px; } /* Gols Feitos */
+.classification-table th:nth-child(7), .classification-table td:nth-child(7) { width: 80px; }  /* Pontos */
+.classification-table th:nth-child(8), .classification-table td:nth-child(8) { width: 100px; } /* Gols Sofridos */
+.classification-table th:nth-child(9), .classification-table td:nth-child(9) { width: 100px; } /* Time */
+
+/* Botão Cancelar - Vermelho */
+.btn-cancelar {
+  background-color: #f20c05; /* Vermelho */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-cancelar:hover {
+  background-color: #ff0800; /* Vermelho mais escuro */
+}
+
+/* Botão Salvar - Roxo */
+.btn-salvar {
+  background-color:#2fc137; /* Roxo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Botão Salvar - Roxo */
+.btn-atualizar {
+  background-color: #082765; /* Roxo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-visualizar {
+  background-color: #ec8713; /* Roxo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-salvar:hover {
+  background-color: #774b7b; /* Roxo mais escuro */
+}
+
+/* Estilização do pop-up */
+.success-popup, .error-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeOut 3s forwards;
+}
+
+.success-popup {
+  background-color: #28a745; /* Verde */
+}
+
+.error-popup {
+  background-color: #dc3545; /* Vermelho */
+}
+
+/* Animação para desaparecer após 3 segundos */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
