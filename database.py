@@ -7,7 +7,7 @@ from psycopg2 import Error
 
 load_dotenv()
 
-password = os.getenv('password')
+password = "admin"
 
 
 def conecta_bd():
@@ -17,7 +17,7 @@ def conecta_bd():
             password=password,
             host="localhost",
             port="5432",
-            database="acoes")
+            database="Premier")
 
         print("Banco conectado com sucesso!!")
 
@@ -31,3 +31,5 @@ def encerra_conn(conn):
     if conn:
         conn.close()
     print("Conexão encerrada!!")
+
+conecta_bd()
